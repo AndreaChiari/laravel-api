@@ -20,8 +20,10 @@ return [
     'allowed_methods' => ['*'],
 
     // aggiungo i link dal frontEnd per fixare un eventuale bug del CORS 
-    'allowed_origins' => [env('APP_FRONTEND_URL', 'http://localhost:5174/')],
 
+    'allowed_origins' => [env('APP_FRONTEND_URL'), 'http://localhost:5175'],
+
+    // 'allowed_origins' => ['*'],
     'allowed_origins_patterns' => [],
 
     'allowed_headers' => ['*'],

@@ -24,9 +24,8 @@ class ProjectController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(string $id)
     {
-        //
     }
 
     /**
@@ -34,7 +33,8 @@ class ProjectController extends Controller
      */
     public function show(string $id)
     {
-        //
+        $project = Project::find($id);
+        return response()->json($project);
     }
 
     /**
